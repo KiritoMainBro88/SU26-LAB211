@@ -1,0 +1,51 @@
+LAB 3 - EMPLOYEE PAYROLL REGRESSION TEST CASES
+Environment: Java 8 compatibility, UTF-8 file encoding
+
+TC01 Failed reload preserves memory
+Precondition: one in-memory employee; file read throws failure.
+Expected: loadFromFile returns false; employee count remains 1.
+
+TC02 Defensive list copy
+Action: clear list returned by getAllEmployees().
+Expected: manager's internal list remains unchanged.
+
+TC03 Reject invalid employee
+Input: BAD ID, empty name, null role/status, negative salary/bonus, 27 days
+Expected: validation exception; record not added.
+
+TC04 Search status exact match
+Input: active and inactive employees; query status active
+Expected: only active employees; active must not match inactive.
+
+TC05 Partial name search
+Input: ali against Alice
+Expected: one match.
+
+TC06 Payroll active employees only
+Input: Alice 100*20+50 active; Bob 80*20 inactive; Carol 200*10+100 active
+Expected total: 4150.
+
+TC07 Enum parsing
+Input: developer and DEVERLOPER
+Expected: developer -> DEVELOPER; typo -> null.
+
+TC08 Invalid update preserves state
+Input: empty name, negative salary/bonus, 27 working days
+Expected: update rejected and original employee unchanged.
+
+TC09 Malformed and duplicate file rows
+Input: valid row, BROKEN row, duplicate ID row, valid row
+Expected: two valid employees loaded; bad rows skipped with warnings.
+
+TC10 Decimal persistence
+Input: salary 100.5, bonus 10.25
+Expected: saved text preserves decimal values.
+
+TC11 Failed save preserves old file
+Precondition: target contains ORIGINAL_CONTENT; list contains invalid employee.
+Expected: validation fails before target replacement; old file remains unchanged.
+TC12 Soft delete employee
+Precondition: E003 exists with active status.
+Action: remove E003.
+Expected: record count is unchanged; E003 status becomes inactive; E003 is excluded from active payroll; a second remove returns false.
+

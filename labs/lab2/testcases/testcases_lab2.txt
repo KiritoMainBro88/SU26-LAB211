@@ -1,0 +1,70 @@
+LAB 2 - FOOTBALL CLUB AND PLAYER REGRESSION TEST CASES
+Environment: Java 8 compatibility, UTF-8 file encoding
+
+TC01 Reject invalid club
+Input: ID BAD, empty name/sponsor, budget -1
+Expected: ClubManager.addClub returns false.
+
+TC02 Add valid clubs and reject duplicate ID
+Input: CL-0001 and CL-0002, then another CL-0001
+Expected: first two accepted; duplicate rejected.
+
+TC03 Reject invalid player constraints
+Input: invalid ID; missing club; shirt 0
+Expected: each record rejected before insertion.
+
+TC04 Shirt number scope
+Input: P0001 CL-0001 shirt 7; P0002 CL-0001 shirt 7; P0002 CL-0002 shirt 7
+Expected: duplicate within CL-0001 rejected; same number in CL-0002 accepted.
+
+TC05 Update duplicate shirt protection
+Precondition: CL-0001 has shirt 7 and shirt 10.
+Input: update shirt 10 player to 7.
+Expected: update rejected; original shirt remains 10.
+
+TC06 Invalid position update
+Input: position Alien
+Expected: update rejected.
+
+TC07 Partial name search
+Input: SMI against John Smith
+Expected: one case-insensitive match.
+
+TC08 Position filter
+Input: Winger
+Expected: only Winger players returned.
+
+TC09 Sorting
+Input: players across Alpha FC and Beta FC
+Expected: club name ascending; within same club shirt number ascending.
+
+TC10 Defensive manager list
+Action: clear the list returned by getItems().
+Expected: manager's internal list remains unchanged.
+
+TC11 Save/reload UTF-8 text files
+Expected: valid club/player lists save and reload with same record count.
+
+TC12 Strict club load
+Input file: one valid line followed by BROKEN
+Expected: IOException; invalid file is rejected.
+
+TC13 Strict player load duplicate shirt
+Input file: two players in same club with shirt 7
+Expected: IOException; invalid file is rejected.
+
+TC14 Finite threshold parser accepts zero
+Input: ValidationUtils.isFiniteDouble("0")
+Expected: true.
+
+TC15 Finite threshold parser accepts a negative number
+Input: ValidationUtils.isFiniteDouble("-1")
+Expected: true.
+
+TC16 Finite threshold parser rejects NaN
+Input: ValidationUtils.isFiniteDouble("NaN")
+Expected: false.
+
+TC17 Finite threshold parser rejects Infinity
+Input: ValidationUtils.isFiniteDouble("Infinity")
+Expected: false.

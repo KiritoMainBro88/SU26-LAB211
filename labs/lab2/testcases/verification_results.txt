@@ -1,0 +1,24 @@
+PASS - reject invalid club
+PASS - add valid club A
+PASS - add valid club B
+PASS - reject duplicate club id
+PASS - reject invalid player id
+PASS - reject missing club
+PASS - reject shirt 0
+PASS - add valid player P0001
+PASS - reject duplicate shirt same club
+PASS - allow same shirt different club
+PASS - add second Alpha player
+PASS - reject update to duplicate shirt
+PASS - reject invalid position update
+PASS - partial search case insensitive
+PASS - position filter
+PASS - sort club then shirt
+PASS - manager list defensive copy
+PASS - save valid clubs
+PASS - save valid players
+PASS - reload clubs
+PASS - reload players
+PASS - strict club load rejects invalid line
+PASS - strict player load rejects duplicate shirt
+RESULT: 23 passed, 0 failed

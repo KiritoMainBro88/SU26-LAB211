@@ -1,0 +1,62 @@
+PASS - EmployeeManager null helper rejected
+PASS - View null scanner rejected
+PASS - EmployeeIO null view rejected
+PASS - inputNewEmployee null manager rejected
+PASS - inputUpdatedEmployee null current rejected
+Please enter Y or N.
+PASS - yes/no input rejects other text then accepts Y
+Employee ID must be E followed by 3 digits, for example E001.
+PASS - existing employee ID input enforces E+3 digits
+PASS - null employee rejected
+PASS - valid employee added
+PASS - workingDays 0 accepted
+PASS - workingDays 26 accepted
+PASS - workingDays 27 rejected
+PASS - zero salary rejected
+PASS - Infinity salary rejected
+PASS - negative bonus rejected
+PASS - null role rejected
+PASS - null status rejected
+PASS - duplicate id case insensitive rejected
+PASS - null find returns null
+PASS - null search attribute returns empty
+PASS - null search query returns empty
+PASS - blank search returns empty
+PASS - unknown search attribute returns empty
+PASS - delete null false
+PASS - update null false
+PASS - required update fields accepted
+PASS - update preserves employee name
+PASS - update preserves working days
+PASS - update changes role salary bonus status
+PASS - status can be updated back to active
+PASS - getEmployeeById defensive entity copy
+PASS - getAll deep defensive copy
+PASS - active list deep defensive copy
+PASS - soft delete succeeds for active employee
+PASS - soft delete retains employee record
+PASS - soft delete changes status to inactive
+PASS - soft-deleted employee excluded from active list
+PASS - second soft delete is rejected
+PASS - duplicate loaded IDs reject whole load
+PASS - failed duplicate load preserves memory
+PASS - null read result rejected
+PASS - null read preserves memory
+PASS - Role parse null safe
+PASS - Status parse null safe
+PASS - new-employee validation rejects null list
+PASS - CSV parser preserves comma and quote in employee name
+[Warning] Line 2 skipped. Reason: Wrong field count (1/7 fields)
+[Warning] Line 3 skipped. Reason: Duplicate Employee ID 'E010'.
+PASS - malformed and duplicate file rows are isolated
+PASS - quoted comma name parsed from file
+PASS - decimal salary and bonus parsed from file
+PASS - real employee file write succeeds
+PASS - employee file round trip preserves valid records
+PASS - invalid employee save rejected
+PASS - rejected save preserves previous target file
+PASS - missing employee file is a failed read
+PASS - Employee implements Identifiable
+PASS - Employee implements PayrollCalculable
+PASS - Employee copy constructor is independent
+RESULT: 57 passed, 0 failed

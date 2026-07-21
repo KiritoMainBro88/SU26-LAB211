@@ -1,0 +1,12 @@
+CL-0001, FC Barcelona, Nike, 820
+CL-0002, Real Madrid Galácticos, Adidas, 910
+CL-0003, Manchester City Elite, Puma, 880
+CL-0004, Bayern Munich Prime, Adidas, 860
+CL-0005, Liverpool FC, Nike, 740
+CL-0006, Paris Saint-Germain, Nike, 890
+CL-0007, Juventus FC, Adidas, 700
+CL-0008, AS Roma FC, Adidas, 720
+CL-0009, AC Milan, Puma, 610
+CL-0010, AC Milan Sportline, Puma, 630
+CL-0011, Chelsea FC, Nike, 760
+CL-0012, Chelsea FC XLine, Nike, 780

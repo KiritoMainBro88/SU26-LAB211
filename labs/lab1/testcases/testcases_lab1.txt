@@ -1,0 +1,31 @@
+LAB 1 - MOUNTAIN HIKING REGRESSION TEST CASES
+Environment: Java 8 compatibility, UTF-8 source encoding
+
+TC01 Valid registration
+Input: SE123456, Nguyen Van A, 0901234567, a@example.com, MT01, base fee 10000000
+Expected: registration added; tuition 10000000 because phone is valid but not discount-eligible.
+
+TC02 Phone change with existing custom base fee
+Precondition: TC01 exists with base fee 10000000.
+Input: update only phone to 0961234567; leave base fee blank.
+Expected: old base fee is preserved and 35% discount is applied; tuition 6500000.
+
+TC03 Case-insensitive partial search
+Input: keyword "vAn"
+Expected: Nguyen Van A is returned.
+
+TC04 Campus filter
+Input: campus "se"
+Expected: IDs beginning with SE are returned.
+
+TC05 Mountain code normalization
+Input: 1, 01, MT01, mt01
+Expected: normalized lookup resolves to MT01.
+
+TC06 Corrupted registrations.dat
+Precondition: one in-memory record exists; file contains invalid bytes.
+Expected: load returns failure and existing in-memory list is preserved.
+
+TC07 Save and reload object file
+Input: valid registration list.
+Expected: save succeeds; a new DAO reloads the same record count.

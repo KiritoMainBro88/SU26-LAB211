@@ -1,0 +1,20 @@
+PASS - missing/failed reload returns false
+PASS - failed reload preserves memory
+PASS - employee list defensive copy
+PASS - reject invalid employee
+PASS - status active exact match
+PASS - status inactive exact match
+PASS - partial name search
+PASS - payroll active only
+PASS - role enum parses valid text
+PASS - role enum rejects typo
+PASS - invalid update rejected
+PASS - rejected update preserves old state
+[Warning] Line 2 skipped. Reason: Wrong field count (1/7 fields)
+[Warning] Line 3 skipped. Reason: Duplicate Employee ID 'E010'.
+PASS - malformed and duplicate rows skipped
+PASS - save valid employees
+PASS - decimal values preserved
+PASS - invalid save fails validation
+PASS - failed save preserves old file
+RESULT: 17 passed, 0 failed

@@ -1,0 +1,64 @@
+PASS - null club rejected
+PASS - infinite budget rejected
+PASS - NaN budget rejected
+PASS - valid club added
+PASS - second valid club added
+PASS - null player rejected
+PASS - null position rejected
+PASS - shirt 100 rejected
+PASS - valid player added
+PASS - blank update fields keep old and succeed
+PASS - null partial search empty
+PASS - null position filter empty
+PASS - null shirt club safe
+PASS - PlayerManager null dependency rejected
+PASS - ClubIO null scanner rejected
+PASS - ClubIO null manager rejected
+PASS - PlayerIO null dependency rejected
+PASS - TablePrinter null manager rejected
+PASS - CSV parser rejects unclosed quote
+PASS - findById club defensive copy
+PASS - findById player defensive copy
+PASS - getItems entity defensive copy
+PASS - replaceAll duplicate clubs rejected
+PASS - failed club replace preserves state
+PASS - replaceAll duplicate shirts rejected
+PASS - failed player replace preserves state
+PASS - replaceAll null player item rejected
+PASS - file save rejects infinite budget
+PASS - Position.parse null safe
+PASS - filter budget Infinity rejected
+PASS - finite threshold parser accepts zero
+PASS - finite threshold parser accepts negative
+PASS - finite threshold parser rejects NaN
+PASS - finite threshold parser rejects Infinity
+PASS - zero budget threshold accepted as empty result
+PASS - negative budget threshold accepted as empty result
+PASS - filterByBudget defensive entity copy
+PASS - search result defensive entity copy
+PASS - position filter defensive entity copy
+PASS - Position.parse case insensitive
+PASS - same club sorts by shirt number
+PASS - equal club names but different clubs do not use cross-club shirt order
+PASS - strict load rejects blank club line
+PASS - save rejects player with missing club reference
+PASS - null club file path rejected
+PASS - null player file path rejected
+PASS - club CSV save supports comma and quote
+PASS - club CSV round trip preserves text
+PASS - player CSV save supports comma
+PASS - player CSV round trip preserves text
+PASS - menu strict load accepts valid files
+PASS - valid menu load populated both managers
+Load data failed!
+PASS - menu strict load fails on blank line
+PASS - failed reload leaves clear-first empty state
+PASS - Club copy constructor is independent
+PASS - Player copy constructor is independent
+PASS - domain club getters expose required operations
+PASS - domain player getters expose required operations
+PASS - ClubManager saveToFile succeeds
+PASS - ClubManager loadFromFile succeeds
+PASS - PlayerManager saveToFile succeeds
+PASS - PlayerManager loadFromFile succeeds
+RESULT: 62 passed, 0 failed

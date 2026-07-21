@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If this coursework portfolio supports your review, cite it using this metadata."
+title: "SU26 LAB211 - Java OOP Portfolio"
+type: software
+authors:
+  - family-names: "Nguyễn"
+    given-names: "Đình Chương"
+version: 1.0.0
+date-released: 2026-07-21
+license: MIT
+repository-code: "https://github.com/KiritoMainBro88/SU26-LAB211"
+keywords:
+  - Java
+  - object-oriented-programming
+  - console-application
+  - software-testing
+  - LAB211

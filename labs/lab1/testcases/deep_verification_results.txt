@@ -1,0 +1,35 @@
+PASS - null StudentDAO rejected
+PASS - null MountainDAO rejected
+PASS - null ID rejected
+PASS - null name rejected
+PASS - null phone rejected
+PASS - null email rejected
+PASS - null mountain rejected
+PASS - NaN base fee rejected
+PASS - Infinity base fee rejected
+PASS - zero base fee rejected
+PASS - negative base fee rejected
+PASS - invalid campus prefix rejected
+PASS - non-digit student suffix rejected
+PASS - invalid 10-digit phone prefix rejected
+PASS - invalid email rejected
+PASS - unknown mountain rejected
+PASS - valid boundary name length 2
+PASS - valid boundary name length 20
+PASS - name length 21 rejected
+PASS - duplicate ID case insensitive
+PASS - NaN update fee rejected
+PASS - failed update preserves fee
+PASS - blank update succeeds
+PASS - blank update preserves name
+PASS - blank update preserves phone
+PASS - blank update preserves email
+PASS - blank update preserves mountain
+PASS - blank update preserves fee
+PASS - returned student object defensive copy
+PASS - null search returns empty
+PASS - invalid campus filter returns empty
+PASS - null delete rejected
+PASS - mixed serialized list rejected
+PASS - mixed serialized list preserves memory
+RESULT: 34 passed, 0 failed

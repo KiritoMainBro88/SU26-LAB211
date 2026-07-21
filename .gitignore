@@ -1,0 +1,31 @@
+# Java / NetBeans outputs
+**/build/
+**/dist/
+**/nbproject/private/
+*.class
+*.jar
+*.war
+*.ear
+
+# Runtime data and logs
+labs/lab1/registrations.dat
+**/logs/
+*.log
+*.tmp
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local verification and rendered review artifacts
+tmp/
+
+# Python document-tool caches
+__pycache__/
+*.py[cod]

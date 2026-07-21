@@ -1,0 +1,14 @@
+PASS - mountain data loaded
+PASS - create valid custom-fee registration
+PASS - custom base fee stored
+PASS - update phone only
+PASS - phone update preserves custom base before discount
+PASS - partial search case insensitive
+PASS - campus filter prefix
+PASS - mountain normalization
+PASS - long numeric mountain input does not overflow
+PASS - corrupt registration load reports failure
+PASS - corrupt registration load preserves memory
+PASS - save registrations
+PASS - reload saved registrations
+RESULT: 13 passed, 0 failed

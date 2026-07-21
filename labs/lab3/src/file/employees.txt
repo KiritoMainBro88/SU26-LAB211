@@ -1,0 +1,10 @@
+E004, David Miller, Developer, 1300, 21, 250, active
+E005, Emma Wilson, Tester, 950, 20, 100, active
+E006, Frank Brown, HR, 1100, 22, 150, active
+E007, Grace Taylor, Developer, 1250, 24, 300, active
+E008, Henry Anderson, Manager, 2200, 19, 600, active
+E009, Ivy Thomas, Tester, 980, 18, 120, inactive
+E010, Jack Moore, Developer, 1400, 26, 350, active
+E011, Karen Lee, HR, 1050, 20, 80, active
+E012, Leo Martin, Manager, 2100, 17, 500, inactive
+E013, Nina Clark, Developer, 1350, 23, 280, active
